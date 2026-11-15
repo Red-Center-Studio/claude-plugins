@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rcs-tools": {
+      "type": "http",
+      "url": "https://redcenterstudio.com/api/tools/mcp"
+    }
+  }
+}

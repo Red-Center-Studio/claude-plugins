@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "webdesk": {
+      "type": "http",
+      "url": "https://redcenterstudio.com/api/webdesk/mcp",
+      "headers": { "Authorization": "Bearer ${WEBDESK_API_KEY}" }
+    }
+  }
+}

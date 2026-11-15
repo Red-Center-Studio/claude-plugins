@@ -1,0 +1,10 @@
+{
+  "name": "website-checks",
+  "version": "1.0.0",
+  "description": "Free website checks as MCP tools, no key: GEO audit (AI search readiness), single point of failure DNS scan, Bubble error decoder.",
+  "author": { "name": "Red Center Studio", "url": "https://redcenterstudio.com" },
+  "homepage": "https://redcenterstudio.com/tools/",
+  "repository": "https://github.com/Red-Center-Studio/claude-plugins",
+  "license": "MIT",
+  "keywords": ["seo", "geo", "llms-txt", "structured-data", "dns", "bubble"]
+}
