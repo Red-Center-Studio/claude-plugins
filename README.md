@@ -17,7 +17,7 @@ A plugin marketplace for Claude Code and Claude with three plugins:
 /plugin install nocode-migration-audit@red-center-studio
 ```
 
-`webdesk` needs an API key in the `WEBDESK_API_KEY` environment variable. Create one free at https://redcenterstudio.com/webdesk/agents/.
+`webdesk` asks for your WebDesk API key when you install it and stores it securely. Create one free at https://redcenterstudio.com/webdesk/agents/.
 
 ## Use the free checks as a connector
 

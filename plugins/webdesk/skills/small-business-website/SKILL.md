@@ -9,7 +9,7 @@ WebDesk builds a complete one-page website from a short brief and returns a ZIP 
 
 ## Setup
 
-The `webdesk` MCP server needs an API key in the `WEBDESK_API_KEY` environment variable. Keys are free to create at https://redcenterstudio.com/webdesk/agents/. Never ask the user to paste a key into the chat; ask them to set the variable and restart Claude Code.
+The `webdesk` MCP server needs a WebDesk API key. Claude Code asks for it when the plugin is installed and keeps it in secure storage; to change it, run `/plugin configure webdesk@red-center-studio`. Keys are free to create at https://redcenterstudio.com/webdesk/agents/. Never ask the user to paste a key into the chat.
 
 ## Tools
 

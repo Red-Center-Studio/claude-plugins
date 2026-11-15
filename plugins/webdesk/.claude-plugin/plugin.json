@@ -16,5 +16,14 @@
     "static-site"
   ],
   "privacyPolicyUrl": "https://redcenterstudio.com/privacy/",
-  "icon": ".claude-plugin/icon.png"
+  "icon": ".claude-plugin/icon.png",
+  "userConfig": {
+    "webdesk_api_key": {
+      "type": "string",
+      "title": "WebDesk API key",
+      "description": "Your WebDesk API key (starts with wd_). Create one free at https://redcenterstudio.com/webdesk/agents/",
+      "required": true,
+      "sensitive": true
+    }
+  }
 }
