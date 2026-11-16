@@ -1,5 +1,6 @@
 {
   "name": "webdesk-claude",
+  "displayName": "WebDesk for Claude",
   "version": "1.0.0",
   "description": "Build, preview and publish a small business website from Claude, with a quote form and an enquiry inbox. Free plan; sign in with an email code.",
   "author": {

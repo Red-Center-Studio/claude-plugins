@@ -1,5 +1,6 @@
 {
   "name": "website-checks",
+  "displayName": "Website Checks",
   "version": "1.1.0",
   "description": "Free website checks as MCP tools, no key: GEO audit (AI search readiness), domain health, AI crawler access, single point of failure DNS scan, Bubble error decoder.",
   "author": {

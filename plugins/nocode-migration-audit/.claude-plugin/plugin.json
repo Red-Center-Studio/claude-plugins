@@ -1,5 +1,6 @@
 {
   "name": "nocode-migration-audit",
+  "displayName": "No-code Migration Audit",
   "version": "0.1.2",
   "description": "Read-only audit of a no-code app before porting it to code. Writes a neutral app spec and a plain-language report. Bubble is supported today.",
   "author": {
