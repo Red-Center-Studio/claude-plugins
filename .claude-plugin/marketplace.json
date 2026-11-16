@@ -43,7 +43,7 @@
     },
     {
       "name": "nocode-migration-audit",
-      "source": { "source": "github", "repo": "Red-Center-Studio/nocode-migration-audit" },
+      "source": "./plugins/nocode-migration-audit",
       "description": "Read-only audit of a no-code app before porting it to code. Writes a neutral app spec and a plain-language report. Bubble is supported today.",
       "category": "development",
       "keywords": ["no-code", "bubble", "migration", "audit", "app-spec"]
