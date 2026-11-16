@@ -1,0 +1,22 @@
+{
+  "name": "site-watch",
+  "version": "1.0.0",
+  "description": "Website monitoring in Claude: domain and certificate expiry, DNS and email records (SPF, DMARC, DKIM), AI crawler access and uptime, with plain alerts and fixes. Free plan; sign in with an email code.",
+  "author": {
+    "name": "Red Center Studio",
+    "url": "https://redcenterstudio.com"
+  },
+  "homepage": "https://redcenterstudio.com/sitewatch/",
+  "repository": "https://github.com/Red-Center-Studio/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "monitoring",
+    "uptime",
+    "domain-expiry",
+    "ssl",
+    "dmarc",
+    "dns"
+  ],
+  "privacyPolicyUrl": "https://redcenterstudio.com/privacy/",
+  "icon": ".claude-plugin/icon.png"
+}

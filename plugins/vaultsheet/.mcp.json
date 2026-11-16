@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "vaultsheet": {
+      "type": "http",
+      "url": "https://mcp.redcenterstudio.com/vaultsheet/mcp"
+    }
+  }
+}

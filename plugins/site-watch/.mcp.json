@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "site-watch": {
+      "type": "http",
+      "url": "https://mcp.redcenterstudio.com/sitewatch/mcp"
+    }
+  }
+}

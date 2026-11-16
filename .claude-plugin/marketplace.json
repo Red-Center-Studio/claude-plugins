@@ -2,16 +2,37 @@
   "name": "red-center-studio",
   "owner": { "name": "Red Center Studio", "email": "hello@redcenterstudio.com", "url": "https://redcenterstudio.com" },
   "metadata": {
-    "description": "Claude plugins from Red Center Studio: free website checks, small business websites built by an agent, and a read-only audit of no-code apps.",
-    "version": "1.0.0"
+    "description": "Claude plugins from Red Center Studio: free website checks, small business websites, website monitoring, questionnaire filling from approved answers, and a read-only audit of no-code apps.",
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "website-checks",
       "source": "./plugins/website-checks",
-      "description": "Free website checks as MCP tools, no key: GEO audit (AI search readiness), single point of failure DNS scan, Bubble error decoder.",
+      "description": "Free website checks as MCP tools, no key: GEO audit (AI search readiness), domain health, AI crawler access, single point of failure DNS scan, Bubble error decoder.",
       "category": "productivity",
-      "keywords": ["seo", "geo", "llms-txt", "dns", "bubble", "website-audit"]
+      "keywords": ["seo", "geo", "llms-txt", "dns", "ssl", "ai-crawlers", "bubble", "website-audit"]
+    },
+    {
+      "name": "webdesk-claude",
+      "source": "./plugins/webdesk-claude",
+      "description": "Build, preview and publish a small business website from Claude, with a quote form and an enquiry inbox. Free plan; sign in with an email code.",
+      "category": "productivity",
+      "keywords": ["website-builder", "small-business", "lead-capture", "custom-domain"]
+    },
+    {
+      "name": "site-watch",
+      "source": "./plugins/site-watch",
+      "description": "Website monitoring: domain and certificate expiry, DNS and email records, AI crawler access and uptime, with plain alerts and fixes. Free plan.",
+      "category": "productivity",
+      "keywords": ["monitoring", "uptime", "domain-expiry", "ssl", "dmarc", "dns"]
+    },
+    {
+      "name": "vaultsheet",
+      "source": "./plugins/vaultsheet",
+      "description": "Fill security questionnaires and tender spreadsheets from answers your team approved, copied word for word, with gaps flagged. Free plan.",
+      "category": "productivity",
+      "keywords": ["security-questionnaire", "rfp", "due-diligence", "xlsx", "compliance"]
     },
     {
       "name": "webdesk",

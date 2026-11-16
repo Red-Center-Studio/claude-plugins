@@ -1,0 +1,20 @@
+{
+  "name": "webdesk-claude",
+  "version": "1.0.0",
+  "description": "Build, preview and publish a small business website from Claude, with a quote form and an enquiry inbox. Free plan; sign in with an email code.",
+  "author": {
+    "name": "Red Center Studio",
+    "url": "https://redcenterstudio.com"
+  },
+  "homepage": "https://redcenterstudio.com/webdesk/claude/",
+  "repository": "https://github.com/Red-Center-Studio/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "website-builder",
+    "small-business",
+    "lead-capture",
+    "custom-domain"
+  ],
+  "privacyPolicyUrl": "https://redcenterstudio.com/privacy/",
+  "icon": ".claude-plugin/icon.png"
+}

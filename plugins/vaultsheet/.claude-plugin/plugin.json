@@ -1,0 +1,21 @@
+{
+  "name": "vaultsheet",
+  "version": "1.0.0",
+  "description": "Fill security questionnaires and tender spreadsheets (.xlsx, .xlsm) from answers your team approved, copied word for word, with weak matches flagged and gaps left blank. Free plan; sign in with an email code.",
+  "author": {
+    "name": "Red Center Studio",
+    "url": "https://redcenterstudio.com"
+  },
+  "homepage": "https://redcenterstudio.com/vaultsheet/",
+  "repository": "https://github.com/Red-Center-Studio/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "security-questionnaire",
+    "rfp",
+    "due-diligence",
+    "xlsx",
+    "compliance"
+  ],
+  "privacyPolicyUrl": "https://redcenterstudio.com/privacy/",
+  "icon": ".claude-plugin/icon.png"
+}
