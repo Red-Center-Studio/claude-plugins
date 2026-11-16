@@ -1,0 +1,33 @@
+{
+  "name": "nocode-migrator",
+  "displayName": "No-code App Data Migrator",
+  "version": "0.3.0",
+  "description": "Move a no-code app's data (Bubble® apps today) into a Cloudflare D1 database and R2 bucket you own, with checks at every step. Free audit, plan and trial with no key; passes from $39 USD per app.",
+  "author": {
+    "name": "Red Center Studio",
+    "url": "https://redcenterstudio.com"
+  },
+  "homepage": "https://redcenterstudio.com/products/no-code-migrator/",
+  "repository": "https://github.com/Red-Center-Studio/claude-plugins",
+  "license": "MIT",
+  "keywords": [
+    "no-code",
+    "bubble",
+    "migration",
+    "cloudflare",
+    "d1",
+    "r2",
+    "data-export"
+  ],
+  "privacyPolicyUrl": "https://redcenterstudio.com/privacy/",
+  "icon": ".claude-plugin/icon.png",
+  "userConfig": {
+    "nc_migrator_key": {
+      "type": "string",
+      "title": "Migrator API key (optional)",
+      "description": "Leave empty for the free audit, plan and trial. After you buy a pass at https://redcenterstudio.com/products/no-code-migrator/ paste the key (starts with nc_) shown once after payment.",
+      "required": false,
+      "sensitive": true
+    }
+  }
+}

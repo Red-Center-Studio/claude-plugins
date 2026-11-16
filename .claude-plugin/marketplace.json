@@ -1,9 +1,13 @@
 {
   "name": "red-center-studio",
-  "owner": { "name": "Red Center Studio", "email": "hello@redcenterstudio.com", "url": "https://redcenterstudio.com" },
+  "owner": {
+    "name": "Red Center Studio",
+    "email": "hello@redcenterstudio.com",
+    "url": "https://redcenterstudio.com"
+  },
   "metadata": {
-    "description": "Claude plugins from Red Center Studio: free website checks, small business websites, website monitoring, questionnaire filling from approved answers, and a read-only audit of no-code apps.",
-    "version": "1.1.0"
+    "description": "Claude plugins from Red Center Studio: free website checks, small business websites, website monitoring, questionnaire filling from approved answers, a read-only audit of no-code apps, and a no-code app data migrator to Cloudflare.",
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -11,42 +15,94 @@
       "source": "./plugins/website-checks",
       "description": "Free website checks as MCP tools, no key: GEO audit (AI search readiness), domain health, AI crawler access, single point of failure DNS scan, Bubble® error decoder.",
       "category": "productivity",
-      "keywords": ["seo", "geo", "llms-txt", "dns", "ssl", "ai-crawlers", "bubble", "website-audit"]
+      "keywords": [
+        "seo",
+        "geo",
+        "llms-txt",
+        "dns",
+        "ssl",
+        "ai-crawlers",
+        "bubble",
+        "website-audit"
+      ]
     },
     {
       "name": "webdesk-claude",
       "source": "./plugins/webdesk-claude",
       "description": "Build, preview and publish a small business website from Claude, with a quote form and an enquiry inbox. Free plan; sign in with an email code.",
       "category": "productivity",
-      "keywords": ["website-builder", "small-business", "lead-capture", "custom-domain"]
+      "keywords": [
+        "website-builder",
+        "small-business",
+        "lead-capture",
+        "custom-domain"
+      ]
     },
     {
       "name": "site-watch",
       "source": "./plugins/site-watch",
       "description": "Website monitoring: domain and certificate expiry, DNS and email records, AI crawler access and uptime, with plain alerts and fixes. Free plan.",
       "category": "productivity",
-      "keywords": ["monitoring", "uptime", "domain-expiry", "ssl", "dmarc", "dns"]
+      "keywords": [
+        "monitoring",
+        "uptime",
+        "domain-expiry",
+        "ssl",
+        "dmarc",
+        "dns"
+      ]
     },
     {
       "name": "vaultsheet",
       "source": "./plugins/vaultsheet",
       "description": "Fill security questionnaires and tender spreadsheets from answers your team approved, copied word for word, with gaps flagged. Free plan.",
       "category": "productivity",
-      "keywords": ["security-questionnaire", "rfp", "due-diligence", "xlsx", "compliance"]
+      "keywords": [
+        "security-questionnaire",
+        "rfp",
+        "due-diligence",
+        "xlsx",
+        "compliance"
+      ]
     },
     {
       "name": "webdesk",
       "source": "./plugins/webdesk",
       "description": "Build a complete one-page small business website from a short brief and get back a ZIP the business owns. Prepaid credits, from $29 USD per website.",
       "category": "productivity",
-      "keywords": ["website-builder", "small-business", "landing-page", "static-site"]
+      "keywords": [
+        "website-builder",
+        "small-business",
+        "landing-page",
+        "static-site"
+      ]
     },
     {
       "name": "nocode-migration-audit",
       "source": "./plugins/nocode-migration-audit",
       "description": "Read-only audit of a no-code app before porting it to code. Writes a neutral app spec and a plain-language report. Bubble is supported today.",
       "category": "development",
-      "keywords": ["no-code", "bubble", "migration", "audit", "app-spec"]
+      "keywords": [
+        "no-code",
+        "bubble",
+        "migration",
+        "audit",
+        "app-spec"
+      ]
+    },
+    {
+      "name": "nocode-migrator",
+      "source": "./plugins/nocode-migrator",
+      "description": "Move a no-code app's data into a Cloudflare D1 database and R2 bucket you own, with checks at every step. Free audit, plan and trial with no key; passes from $39 USD per app.",
+      "category": "development",
+      "keywords": [
+        "no-code",
+        "bubble",
+        "migration",
+        "cloudflare",
+        "d1",
+        "r2"
+      ]
     }
   ]
 }

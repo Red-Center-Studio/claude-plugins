@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "nc-migrator": {
+      "type": "http",
+      "url": "https://nc.redcenterstudio.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.nc_migrator_key}"
+      }
+    }
+  }
+}
