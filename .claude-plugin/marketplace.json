@@ -6,8 +6,8 @@
     "url": "https://redcenterstudio.com"
   },
   "metadata": {
-    "description": "Claude plugins from Red Center Studio: free website checks, small business websites, website monitoring, questionnaire filling from approved answers, a read-only audit of no-code apps, and a no-code app data migrator to Cloudflare.",
-    "version": "1.2.0"
+    "description": "Claude plugins from Red Center Studio: free website checks, small business websites, website monitoring, questionnaire filling from approved answers, a read-only audit of no-code apps, and a no-code app and data migrator to Cloudflare.",
+    "version": "1.3.0"
   },
   "plugins": [
     {
@@ -93,13 +93,14 @@
     {
       "name": "nocode-migrator",
       "source": "./plugins/nocode-migrator",
-      "description": "Move a no-code app's data into a Cloudflare D1 database and R2 bucket you own, with checks at every step. Free audit, plan and trial with no key; passes from $39 USD per app.",
+      "description": "Move a Bubble® app's data, files, and full UI and backend into your own Cloudflare account with checks at every step. Free audit, plan, 3-page preview, and 1,000-record trial; passes from $39 USD.",
       "category": "development",
       "keywords": [
         "no-code",
         "bubble",
         "migration",
         "cloudflare",
+        "workers",
         "d1",
         "r2"
       ]
