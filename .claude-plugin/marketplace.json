@@ -98,8 +98,10 @@
       "keywords": [
         "no-code",
         "bubble",
+        "bubble-io",
         "migration",
         "cloudflare",
+        "cloudflare-workers",
         "workers",
         "d1",
         "r2"

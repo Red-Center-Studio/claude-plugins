@@ -39,7 +39,7 @@ Every server here also works as a custom connector in Claude (Settings, Connecto
 | WebDesk for Claude | `https://mcp.redcenterstudio.com/mcp` |
 | Site Watch | `https://mcp.redcenterstudio.com/sitewatch/mcp` |
 | VaultSheet | `https://mcp.redcenterstudio.com/vaultsheet/mcp` |
-| No-code app and data migrator (free audit, plan, 3-page preview, and trial) | `https://nc.redcenterstudio.com/mcp` |
+| Bubble to Cloudflare App & Data Migrator (free audit, plan, 3-page preview, and trial) | `https://nc.redcenterstudio.com/mcp` |
 
 Setup steps for each connector are in https://github.com/Red-Center-Studio/claude-connectors.
 
