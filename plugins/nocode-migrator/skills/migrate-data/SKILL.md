@@ -18,7 +18,13 @@ Run this skill after auditing and agreeing on the mapping plan (`audit-bubble`).
 ## Stage order
 
 1. **Connect (`nc_connect`)**:
-   - Call `nc_connect` with `job_id` (or `app_base_url` + `version`) so the owner enters Cloudflare account ID, Cloudflare API token (`Account` permissions including `D1: Edit` and `Workers R2 Storage: Edit`; add `Workers Scripts: Edit` and `Queues: Edit` if running full `nc_move`), D1 database name, R2 bucket name, R2 S3 keys, and Bubble Data API token.
+   - Call `nc_connect` with `job_id` (or `app_base_url` + `version`; `app_base_url` accepts `https://yourapp.bubbleapps.io`, a custom domain, or a Bubble Editor URL with `?id=yourapp`) so the owner enters Cloudflare account ID, Cloudflare API token (`Account` permissions including `D1: Edit` and `Workers R2 Storage: Edit`; add `Workers Scripts: Edit` and `Queues: Edit` if running full `nc_move`), D1 database name, R2 bucket name, R2 S3 keys, and Bubble Data API token (plus optional `.bubble` export or schema upload up to 500 MB).
+   - If the owner needs help creating the R2 bucket and S3 keys, guide them step by step:
+     1. Open Cloudflare Dashboard -> **R2 Object Storage** (left sidebar; enable R2 if prompted, first 10 GB/month is free).
+     2. Click **Create bucket**, choose a lowercase name with only letters, digits, and hyphens (for example `myapp-migrator`), leave Location **Automatic** and Storage Class **Standard**, and click **Create bucket**.
+     3. Open **R2 Object Storage -> Overview -> Manage R2 API Tokens -> Create User API token** (or **Create Account API token**).
+     4. Choose **Object Read & Write**, select **Apply to specific buckets only**, tick the new bucket, and click **Create API Token**.
+     5. On the confirmation screen, scroll past the `cfat_` Token value to **Use the following credentials for S3 clients** and copy the 32-character **Access Key ID** and 64-character **Secret Access Key**.
    - Optionally call `nc_account` to confirm free trial eligibility, active passes, or credit balance.
 2. **Schema (`nc_schema`)**:
    - Generate SQL migrations and Drizzle schema under `nc/<job>/schema/` in R2.

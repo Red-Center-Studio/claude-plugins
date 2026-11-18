@@ -19,7 +19,7 @@ Use this skill when the owner asks to audit a Bubble® app, estimate migration e
 1. **Gather structural input (prefer sealed upload or `app-spec.json`)**:
    - If the owner already ran the `nocode-migration-audit` plugin, use its `app-spec.json` (spec `0.1`). This includes privacy rules and workflow counts needed later by `nc_access`.
    - If the owner has the Bubble MCP connected and no `app-spec.json`, `list_types` provides the fallback `editor_catalog`.
-   - Preferred flow: call `nc_connect` with `app_base_url` and `version` (`"live"` or `"test"`) first so the owner opens the 30-minute secure link to enter their Bubble Data API token (for record counts) and upload the catalog file. Keep the returned `job_id`.
+   - Preferred flow: call `nc_connect` with `app_base_url` (`https://yourapp.bubbleapps.io`, a custom domain, or a Bubble Editor URL such as `https://bubble.io/page?id=yourapp`) and `version` (`"live"` or `"test"`; automatically inferred if URL includes `version=test` or `/version-test`) first so the owner opens the secure link to enter their Bubble Data API token (for record counts) and upload their `.bubble` export (50 MB+ files up to 500 MB stream with secrets stripped and auto-derive `editor_catalog` and `privacy_rules`) or catalog JSON. Keep the returned `job_id`.
 2. **Run `nc_audit`**:
    - Call `nc_audit` with `source: "bubble"`, `app_base_url`, `version`, and either `job_id`, `app_spec`, or `editor_catalog`.
    - `nc_audit` returns an inventory of data types, fields, relations, option sets, record counts (if a Data API token was sealed), unexposed Data API types, and migration risks.
