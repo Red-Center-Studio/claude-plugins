@@ -10,7 +10,7 @@ A plugin marketplace for Claude Code and Claude with seven plugins:
 | `vaultsheet` | Fill security questionnaires and tender spreadsheets (.xlsx, .xlsm) from answers your team approved, copied word for word, with gaps flagged | Free plan, paid plans optional |
 | `webdesk` | An agent builds a complete one-page small business website from a short brief and returns a ZIP the business owns | Prepaid credits from $29 USD per website |
 | `nocode-migration-audit` | Read-only audit of a no-code app before porting it to code: a neutral app spec and a plain-language report | Free, MIT |
-| `nocode-migrator` | Move a Bubble® app's data, files, and full UI and backend into your own Cloudflare account with checks at every step | Free audit, plan, 3-page preview and 1,000-record trial; passes from $39 USD |
+| `nocode-migrator` | Move a Bubble® app's data, files, and full UI and backend into your own Cloudflare account with checks at every step | Free audit, plan, 10-page preview and 1,000-record trial; passes from $39 USD |
 
 ## Install in Claude Code
 
@@ -27,7 +27,7 @@ A plugin marketplace for Claude Code and Claude with seven plugins:
 
 `webdesk-claude`, `site-watch` and `vaultsheet` connect to remote MCP servers that ask you to sign in with your email address and a 6-digit code the first time you use them (run `/mcp` in Claude Code to sign in). `webdesk` asks for your WebDesk API key when you install it and stores it securely. Create one free at https://redcenterstudio.com/webdesk/agents/.
 
-`nocode-migrator` asks for an optional key when you install it. Leave it empty for the free audit, plan, 3-page preview, and trial (up to 1,000 records, once per app). After you buy a pass or credits at https://redcenterstudio.com/products/no-code-migrator/ add the key shown once after payment. Your Cloudflare and app tokens go on a one-time secure page the migrator links to, never in the chat.
+`nocode-migrator` asks for an optional key when you install it. Leave it empty for the free audit, plan, 10-page preview, and trial (up to 1,000 records, once per app). After you buy a pass or credits at https://redcenterstudio.com/products/no-code-migrator/ add the key shown once after payment. Your Cloudflare and app tokens go on a one-time secure page the migrator links to, never in the chat.
 
 ## Use them as connectors in Claude
 
@@ -39,7 +39,7 @@ Every server here also works as a custom connector in Claude (Settings, Connecto
 | WebDesk for Claude | `https://mcp.redcenterstudio.com/mcp` |
 | Site Watch | `https://mcp.redcenterstudio.com/sitewatch/mcp` |
 | VaultSheet | `https://mcp.redcenterstudio.com/vaultsheet/mcp` |
-| Bubble to Cloudflare App & Data Migrator (free audit, plan, 3-page preview, and trial) | `https://nc.redcenterstudio.com/mcp` |
+| Bubble to Cloudflare App & Data Migrator (free audit, plan, 10-page preview, and trial) | `https://nc.redcenterstudio.com/mcp` |
 
 Setup steps for each connector are in https://github.com/Red-Center-Studio/claude-connectors.
 

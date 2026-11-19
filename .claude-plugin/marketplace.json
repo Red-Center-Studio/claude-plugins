@@ -93,7 +93,7 @@
     {
       "name": "nocode-migrator",
       "source": "./plugins/nocode-migrator",
-      "description": "Move a Bubble® app's data, files, and full UI and backend into your own Cloudflare account with checks at every step. Free audit, plan, 3-page preview, and 1,000-record trial; passes from $39 USD.",
+      "description": "Move a Bubble® app's data, files, and full UI and backend into your own Cloudflare account with checks at every step. Free audit, plan, 10-page preview, and 1,000-record trial; passes from $39 USD.",
       "category": "development",
       "keywords": [
         "no-code",
