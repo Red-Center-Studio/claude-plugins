@@ -14,7 +14,7 @@ Requires uploading the app's `.bubble` export via `nc_connect(purpose: "export")
 1. **Plan & customise (free)**:
    - Call `nc_compile_plan` to review the move score, page list, and automatic vs manual features.
    - Optional `nc_changes`: queue pre-build modifications to data model fields, privacy rules, backend workflows, or pages (for example renaming fields, tightening rules, or adding routes).
-   - Optional `nc_basket`: inspect or select modular add-ons (such as `admin_dashboard`, `web_analytics`, `marketing_hub`, `payments`, `bookings`, `referrals`, `ai_assistant`, `claude_connector`, `weekly_backup`, or micro UI add-ons like `theme`, `speed_search`, `accessibility`, `dark_mode`, `cookie_banner`). Only built add-ons can be charged.
+   - Optional `nc_basket`: inspect or select modular add-ons (such as `admin_dashboard`, `web_analytics`, `ai_assistant`, `claude_connector`, `weekly_backup`, or micro UI add-ons like `speed_search`, `accessibility`, `dark_mode`, `cookie_banner`). Only list what `nc_basket` returns: add-ons that are off sale for now never appear and must not be offered or used as examples. An add-on that needs setup says so in its `needs` text, so pass that on to the owner. Only built add-ons can be charged.
 2. **Free 10-page live preview (core routes first) (`nc_preview` + `nc_preview_status`)**:
    - Call `nc_preview` with `job_id` (and up to 10 page keys, or leave them out for the 10 core-route defaults) to rebuild and deploy a free interactive preview of up to 10 pages link before any purchase.
    - Poll with `nc_preview_status` until the build completes and share the signed preview URL with the owner.
@@ -23,7 +23,14 @@ Requires uploading the app's `.bubble` export via `nc_connect(purpose: "export")
    - Show the exact USD breakdown and get **explicit owner consent** before advancing past any payment, deploy, or cutover prompt inside `nc_move`.
    - Call `nc_move` to orchestrate credentials (`nc_connect`), data migration, full backend/UI compilation in the Cloudflare build container, automated verification (`workerd` tests + checks; failed items refund automatically), and staging deployment into the owner's own Cloudflare account.
    - Never pass `confirm_price_usd`, `confirm_add_ons: true`, `confirm_go_live: true`, or `confirm_cutover: true` without explicit owner confirmation in chat.
-4. **Data hygiene (`nc_forget`)**:
+4. **What to tell the owner about the build**:
+   - Paid builds use Claude Sonnet for every page, and any page still under the pass mark gets a retry round from the stronger Claude Opus 5.5.
+   - Paying starts the full build straight away. The Cloudflare and R2 details are asked right after payment and never block the build; only the data move, the deploy and the export wait for verified details.
+   - Service keys (Stripe, Google sign-in, email and similar) are optional. They can be added any time after the build, even once the app is live in Cloudflare, and any service can be left off.
+   - Some moved apps need small touch-ups, because translating visual workflows and plugins is never word for word. Say so honestly.
+   - After the move the owner can keep improving the app with their own AI coding agent (Claude Code, Antigravity and similar). A paid build comes with a ready polish prompt, also in the delivered README.
+   - Work is saved for 30 days from the last activity on a paid move (7 days for a free preview). The editor shows an estimate of when the build will be ready, and the owner is emailed when it is ready or when action is needed.
+5. **Data hygiene (`nc_forget`)**:
    - Call `nc_forget` anytime the owner asks to delete their uploaded `.bubble` export and temporary build artifacts immediately.
 
 ## Path 2: Developer Mode (`$45 USD`) or manual Worker rebuild
