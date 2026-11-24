@@ -39,7 +39,7 @@ When the owner wants to move UI pages and workflows as code in addition to data 
    - Per-page and reusable readiness breakdown,
    - Automatic replacements vs manual items (HTML blocks, unsupported plugins, complex rules),
    - Re-enterable secret names stripped during upload,
-   - Tier quote (Small up to 10 pages `$129 USD`, Standard up to 30 `$249 USD`, Large up to 80 `$289 USD` (81 to 250 pages add `$3 USD` per page over 80; over 250 is a custom quote), or Developer mode `$45 USD`; includes a free preview of up to 10 core pages).
+   - Tier quote (Small up to 10 pages `$159 USD`, Standard up to 30 `$299 USD`, Large up to 80 `$389 USD` (81 to 250 pages add `$3 USD` per page over 80; over 250 is a custom quote), or Developer mode `$45 USD`; includes a free preview of up to 10 core pages).
 
 ## Reporting back
 

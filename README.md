@@ -27,7 +27,13 @@ A plugin marketplace for Claude Code and Claude with seven plugins:
 
 `webdesk-claude`, `site-watch` and `vaultsheet` connect to remote MCP servers that ask you to sign in with your email address and a 6-digit code the first time you use them (run `/mcp` in Claude Code to sign in). `webdesk` asks for your WebDesk API key when you install it and stores it securely. Create one free at https://redcenterstudio.com/webdesk/agents/.
 
-`nocode-migrator` asks for an optional key when you install it. Leave it empty for the free audit, plan, 10-page preview, and trial (up to 1,000 records, once per app). After you buy a pass or credits at https://redcenterstudio.com/products/no-code-migrator/ add the key shown once after payment. Your Cloudflare and app tokens go on a one-time secure page the migrator links to, never in the chat.
+`nocode-migrator` asks for an optional key when you install it. Leave it empty for the free audit, plan, 10-page preview, and trial (up to 1,000 records, once per app). After you buy a pass or credits at https://redcenterstudio.com/app-mover/ add the key shown once after payment. Your Cloudflare and app tokens go on a one-time secure page the migrator links to, never in the chat.
+
+### How it works / what it costs / what you own
+
+- **App Mover (full rebuild on your Cloudflare account):** https://redcenterstudio.com/app-mover/ - Small `$159 USD` (up to 10 pages), Standard `$299 USD` (up to 30 pages), Large `$389 USD` (up to 80 pages; 81 to 250 add `$3 USD`/page; over 250 custom quote), Developer mode `$45 USD` (includes matching data pass, 2 rebuild rounds, 30-day fix window).
+- **Data Migrator (schema, records, files, privacy rules, redirects):** https://redcenterstudio.com/app-mover/?tab=data#run - Free 1,000-record trial (7 days); 30-day passes `$39 USD` Starter (10k records, 1 GB), `$69 USD` Migration (100k records, 5 GB), `$199 USD` Large (500k records, 50 GB).
+- **What you own:** 100% of the generated TypeScript, React, Hono, and Drizzle code running in your own Cloudflare account (Workers, D1, R2) with no ongoing platform fee.
 
 ## Use them as connectors in Claude
 
@@ -45,11 +51,15 @@ Setup steps for each connector are in https://github.com/Red-Center-Studio/claud
 
 ## Links
 
+- App Mover: https://redcenterstudio.com/app-mover/
+- Data Migrator: https://redcenterstudio.com/app-mover/?tab=data#run
 - All connectors: https://redcenterstudio.com/claude-connectors/
 - Free tools in the browser: https://redcenterstudio.com/tools/
 - WebDesk for AI agents: https://redcenterstudio.com/webdesk/agents/
 - MCP server docs: https://redcenterstudio.com/webdesk/agents/docs/
 - Privacy: https://redcenterstudio.com/privacy/
+- License: MIT ([LICENSE](LICENSE))
+- Security and support contact: hello@redcenterstudio.com
 - Studio: https://redcenterstudio.com
 
-Bubble is a registered trademark of Bubble Group, Inc. Red Center Studio is not affiliated with, endorsed by or certified by Bubble or Anthropic.
+Bubble® is a registered trademark of Bubble Group, Inc. Red Center Studio is not affiliated with, endorsed by or certified by Bubble or Anthropic.

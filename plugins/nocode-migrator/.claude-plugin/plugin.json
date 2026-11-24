@@ -7,7 +7,7 @@
     "name": "Red Center Studio",
     "url": "https://redcenterstudio.com"
   },
-  "homepage": "https://redcenterstudio.com/products/no-code-migrator/",
+  "homepage": "https://redcenterstudio.com/app-mover/",
   "repository": "https://github.com/Red-Center-Studio/claude-plugins",
   "license": "MIT",
   "keywords": [
@@ -28,7 +28,7 @@
     "nc_migrator_key": {
       "type": "string",
       "title": "Migrator API key (optional)",
-      "description": "Leave empty for the free audit, plan, 10-page preview, and 1,000-record trial. After you buy a pass or credits at https://redcenterstudio.com/products/no-code-migrator/ paste the key (starts with nc_) shown once after payment.",
+      "description": "Leave empty for the free audit, plan, 10-page preview, and 1,000-record trial. After you buy a pass or credits at https://redcenterstudio.com/app-mover/ paste the key (starts with nc_) shown once after payment.",
       "required": false,
       "sensitive": true
     }
